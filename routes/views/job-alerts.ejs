@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= title %></title> <link rel="stylesheet" href="/css/styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+        <title>Set Job Alerts</title> </head>
+<body>
+    <header>
+        <h1>Resume Builder Software</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/resume-builder">Resume Builder</a>
+            <a href="/skills-demo">Skill/Demo Questions</a>
+            <a href="/interview-tips">Interview Tips</a>
+            <a href="/cover-letter">Cover Letter Builder</a>
+            <a href="/job-alerts">Job Alert</a>
+            <a href="/job-matching">Job Search</a>
+        </nav>
+    </header>
+    <main>
+        <section id="job-alerts">
+            <h2 class="section-heading">Set Job Alerts</h2>
+            <form id="jobAlertForm">
+                <label for="alertKeyword">Job Keyword:</label>
+                <input type="text" id="alertKeyword" placeholder="e.g., Software Engineer" required>
+
+                <label for="alertLocation">Location:</label>
+                <input type="text" id="alertLocation" placeholder="e.g., Mumbai" required>
+
+                <label for="alertEmail">Email Address:</label>
+                <input type="email" id="alertEmail" placeholder="e.g., example@mail.com" required>
+
+                <button type="button" onclick="setJobAlert()">Set Alert</button>
+            </form>
+            <div style="margin-top: 20px;">
+                <a href="/cover-letter" class="welcome-button">Previous: Cover Letter</a>
+                <a href="/job-matching" class="welcome-button">Next: Job Search</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Resume Builder Software</p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>

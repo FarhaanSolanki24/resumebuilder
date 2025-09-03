@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= title %></title> <link rel="stylesheet" href="/css/styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+        <title>Cover Letter</title> </head>
+<body>
+    <header>
+        <h1>Resume Builder Software</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/resume-builder">Resume Builder</a>
+            <a href="/skills-demo">Skill/Demo Questions</a>
+            <a href="/interview-tips">Interview Tips</a>
+            <a href="/cover-letter">Cover Letter Builder</a>
+            <a href="/job-alerts">Job Alert</a>
+            <a href="/job-matching">Job Search</a>
+        </nav>
+    </header>
+    <main>
+        <section id="cover-letter">
+            <h2 class="section-heading">Cover Letter Builder</h2>
+            <div class="cover-letter-box">
+                <form id="coverLetterForm">
+                    <label for="userName">Your Name:</label>
+                    <input type="text" id="userName" placeholder="Enter your name" required>
+
+                    <label for="jobTitle">Job Title:</label>
+                    <input type="text" id="jobTitle" placeholder="Enter the job title" required>
+
+                    <label for="companyName">Company Name:</label>
+                    <input type="text" id="companyName" placeholder="Enter the company name" required>
+
+                    <label for="coverMessage">Message:</label>
+                    <textarea id="coverMessage" placeholder="Write your message" required></textarea>
+
+                    <button type="button" onclick="generateCoverLetter()">Generate Cover Letter</button>
+
+                    <div id="coverLetterOutput"></div><br>
+                    <button type="button" onclick="exportCoverLetterAsPDF()">Export Cover Letter as PDF</button>
+                </form>
+            </div>
+            <div style="margin-top: 20px;">
+                <a href="/interview-tips" class="welcome-button">Previous: Interview Tips</a>
+                <a href="/job-alerts" class="welcome-button">Next: Job Alerts</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Resume Builder Software</p>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>

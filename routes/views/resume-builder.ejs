@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= title %></title> <link rel="stylesheet" href="/css/styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+        <title>Resume Builder</title> </head>
+<body>
+    <header>
+        <h1>Resume Builder Software</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/resume-builder">Resume Builder</a>
+            <a href="/skills-demo">Skill/Demo Questions</a>
+            <a href="/interview-tips">Interview Tips</a>
+            <a href="/cover-letter">Cover Letter Builder</a>
+            <a href="/job-alerts">Job Alert</a>
+            <a href="/job-matching">Job Search</a>
+        </nav>
+    </header>
+    <main>
+        <section id="resume-builder">
+            <h2 class="section-heading">Resume Builder</h2>
+            <form id="resumeForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" placeholder="Enter your age" required>
+
+                <label for="experience">Experience:</label>
+                <textarea id="experience" placeholder="Describe your experience" required></textarea>
+
+                <label for="qualifications">Qualifications:</label>
+                <textarea id="qualifications" placeholder="List your qualifications" required></textarea>
+
+                <label for="skills">Skills:</label>
+                <textarea id="skills" placeholder="List your skills" required></textarea>
+
+                <label for="certifications">Certifications:</label>
+                <textarea id="certifications" placeholder="List your certifications"></textarea>
+
+                <label for="achievements">Achievements:</label>
+                <textarea id="achievements" placeholder="List your achievements"></textarea>
+
+                <label for="hobbies">Hobbies:</label>
+                <textarea id="hobbies" placeholder="List your hobbies"></textarea>
+
+                <label for="languages">Languages Known:</label>
+                <textarea id="languages" placeholder="List languages you know"></textarea>
+
+                <label for="template">Select Template:</label>
+                <select id="template">
+                    <option value="default">Default</option>
+                    <option value="modern">Modern</option>
+                    <option value="classic">Classic</option>
+                </select>
+
+                <label for="colorScheme">Select Color Scheme:</label>
+                <input type="color" id="colorScheme" value="#0073e6">
+
+                <label for="font">Select Font:</label>
+                <select id="font">
+                    <option value="Arial">Arial</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Microsoft NeoGothic">Microsoft NeoGothic</option>
+                    <option value="Impact">Impact</option>
+                    <option value="Calibri">Calibri</option>
+                </select>
+
+                <button type="button" onclick="generateResume()">Generate Resume</button>
+            </form>
+            <div id="resumeOutput"></div><br>
+            <button type="button" onclick="exportResumeAsPDF()">Export Resume as PDF</button>
+            <div style="margin-top: 20px;">
+                <a href="/skills-demo" class="welcome-button">Next: Skill/Demo Questions</a>
+            </div>
+        </section>
+    </section>
+    <section id="skill-questions-section" style="margin-top: 20px;">
+        <h2 class="section-heading">Skill Demo Questions</h2>
+        <div id="demoQuestions">
+            </div>
+    </section>
+</main>
+    </main>
+    <footer>
+        <p>© 2025 Resume Builder Software</p>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>

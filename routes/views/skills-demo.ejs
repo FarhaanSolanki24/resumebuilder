@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= title %></title> <link rel="stylesheet" href="/css/styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+        <title>Skills/Demo Questions</title> </head>
+    </head>
+<body>
+    <header>
+        <h1>Resume Builder Software</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/resume-builder">Resume Builder</a>
+            <a href="/skills-demo">Skill/Demo Questions</a>
+            <a href="/interview-tips">Interview Tips</a>
+            <a href="/cover-letter">Cover Letter Builder</a>
+            <a href="/job-alerts">Job Alert</a>
+            <a href="/job-matching">Job Search</a>
+        </nav>
+    </header>
+    <main>
+        <section id="skills-demo">
+            <h2 class="section-heading">Skill/Demo Questions</h2>
+
+            <div>
+                <label for="skillsInput">Enter your skills (comma-separated):</label><br>
+                <textarea id="skillsInput" name="skillsInput" rows="2" cols="50"></textarea><br><br>
+                <button onclick="generateSkillQuestions(document.getElementById('skillsInput').value)">Generate Questions</button>
+            </div>
+
+            <h3 style="margin-top: 20px;">Generated Questions:</h3>
+            <ul id="demoQuestions">
+                </ul>
+
+            <div style="margin-top: 20px;">
+                <a href="/resume-builder" class="welcome-button">Previous: Resume Builder</a>
+                <a href="/interview-tips" class="welcome-button">Next: Interview Tips</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Resume Builder Software</p>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/api.js"></script>
+</body>
+</html>
+
+
+
